@@ -168,6 +168,7 @@ fun testNulls(str:String?){
     adress?.let{
         println("my adress is ${adress}")
     }
+
 }
 
 
