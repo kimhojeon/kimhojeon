@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.ex0113.auth.IntroActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,8 @@ class SplashActivity : AppCompatActivity() {
 
         var handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this, MainActivity::class.java)
+            //인트로액티비티로 전환
+            var intent = Intent(this, IntroActivity::class.java)
             startActivity(intent)
         }, 3000)
 

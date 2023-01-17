@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <!-- 안보이게 수정 노액션바-->
-    <style name="Theme.Ex0113" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Ex0113" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
+
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -13,6 +14,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Theme.Ex0113.NoActionBar">
@@ -23,4 +27,14 @@
     <style name="Theme.Ex0113.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Ex0113.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--로그인 editext 속성을 여기서 한번에 스타일로 줌-->
+    <style name="AuthEditText" parent="android:TextAppearance.Widget.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">10dp</item>
+
+
+    </style>
+
 </resources>

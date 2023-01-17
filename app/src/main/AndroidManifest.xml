@@ -15,8 +15,17 @@
         android:theme="@style/Theme.Ex0113"
         tools:targetApi="32">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
+            android:name=".auth.JoinActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".auth.IntroActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false"
@@ -27,7 +36,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".IntroActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
